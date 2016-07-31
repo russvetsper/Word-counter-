@@ -16,7 +16,7 @@ _would need to access it http://localhost:5004 ._
 | simplest Behavior| single letter "A", "B"| count output should be "0" |
 | multi latter count| multiple letters "A,A," | result would be "2"|
 | word count  "Feel" |  "I feel great"  | return would be "1"
-|find sentences|"I like summer"|return "i like summer " 
+|find sentences|"I like summer"|return "i like summer "
 
 ## Known Bugs
 
@@ -25,3 +25,6 @@ _No known Bugs_
 ## Tools Used
 
 _C#, Razor, Nancy, HTML xunit.runner._
+
+_copyright_
+_licenced by Russ Vetsper._
