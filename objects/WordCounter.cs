@@ -1,16 +1,18 @@
 using System;
 using System.Collections.Generic;
 
-namespace WordCounter.Objects
+
+
+namespace WordCountering
 {
   public class WordCounter
   {
     private string _sentence;
     private string _word;
 
-    public WordCounter(string sen, string word)
+    public WordCounter(string sentence, string word)
     {
-      _sentence = sen.ToLower();
+      _sentence = sentence.ToLower();
       _word = word.ToLower();
     }
 
@@ -38,7 +40,7 @@ namespace WordCounter.Objects
 
 
 
-    public int CountRepeats()
+    public int CountRepeat()
    {
 
      var count=0;
