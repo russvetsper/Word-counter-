@@ -7,13 +7,23 @@ namespace WordCountering
 {
   public class WordCounter
   {
-    private string _sentence;
     private string _word;
+    private string _sentence;
 
-    public WordCounter(string sentence, string word)
+    public WordCounter(string word, string sentence)
     {
-      _sentence = sentence.ToLower();
       _word = word.ToLower();
+      _sentence = sentence.ToLower();
+    }
+    public string GetWord()
+    {
+      return _word;
+    }
+
+
+    public void SetWord(string word)
+    {
+      _word = word;
     }
 
     public string GetSentence()
@@ -27,16 +37,6 @@ namespace WordCountering
       _sentence = sentence;
     }
 
-    public string GetWord()
-    {
-      return _word;
-    }
-
-
-    public void SetWord(string word)
-    {
-      _word = word;
-    }
 
 
 
@@ -44,11 +44,11 @@ namespace WordCountering
    {
 
      var count=0;
-      string mySentence=this._sentence;
-      string[] myArry=mySentence.Split(' ');
+      string myWord=this._word;
+      string[] myArry=myWord.Split(' ');
       for (int i=0; i<myArry.Length; i++) {
 
-      if(myArry[i]==this._word)
+      if(myArry[i]==this._sentence)
       {
         count=count+1;
       }
